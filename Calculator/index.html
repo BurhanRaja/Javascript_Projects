@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="head">
+        <div class="numbers">
+            <h2 id="num1">0</h2>
+            <h2 id="num2">0</h2>
+        </div>
+
+        <div class="reset">
+            <button id="reset-btn" onclick="resetnum()">C</button>
+        </div>
+
+        <div class="inc-dec">
+            <button id="increment-btn-1" class="inc-dec-btn" onclick="increment_1()">11++</button>
+            <button id="decrement-btn-1" class="inc-dec-btn" onclick="decrement_1()">11--</button>
+            <button id="increment-btn-2" class="inc-dec-btn" onclick="increment_2()">21++</button>
+            <button id="decrement-btn-2" class="inc-dec-btn" onclick="decrement_2()">21--</button>
+        </div>
+       
+        <div class="methods">
+            <button id="add-btn" class="math-func" onclick="add()">+</button>
+            <button id="subtract-btn" class="math-func" onclick="subtract()">-</button>
+            <button id="multiply-btn" class="math-func" onclick="multiply()">*</button>
+            <button id="divide-btn" class="math-func" onclick="divide()">/</button>
+        </div>
+
+        <p id="results">Result:</p>
+        <p id="result"></p>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

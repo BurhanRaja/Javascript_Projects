@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+/* Numbers */
+.numbers{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+#num1{
+    margin: 10px;
+    font-size: 50px;
+}
+#num2{
+    margin: 10px;
+    font-size: 50px;
+}
+
+
+/* Reset Button */
+.reset{
+    margin: 5px;
+    padding: 10px;
+}
+#reset-btn{
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 50%;
+    width: 65px;
+    cursor: pointer;
+}
+
+
+/* Increment Decrement */
+.inc-dec{
+    margin: 5px;
+    padding: 10px;
+}
+.inc-dec-btn{
+    padding: 15px;
+    font-size: 25px;
+    margin: 5px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* Maths Function */
+.methods{
+    margin: 5px;
+    padding: 10px;
+}
+.math-func{
+    padding: 15px;
+    font-size: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    width: 70px;
+    cursor: pointer;
+}
+
+
+/* Result */
+#results{
+    margin: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+#result{
+    margin: 10px;
+    font-size: 50px;
+}
