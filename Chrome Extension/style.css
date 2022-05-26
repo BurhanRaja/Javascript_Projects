@@ -27,3 +27,18 @@ button:hover {
     cursor: pointer;
 }
 
+.list-container ul {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.list-container li {
+    list-style-type: none;
+    margin: 5px 0px;
+}
+
+.list-container li a {
+    color: #6ba549;
+}
+
+
