@@ -2,6 +2,12 @@ const saveBtn = document.getElementById("save-btn")
 const inputEl = document.getElementById("input-el")
 const ulEl = document.getElementById("ul-el")
 
+// Local Storage
+localStorage.setItem("myLeads", "www.exampleleads.com")
+console.log(localStorage.getItem("myLeads"))
+localStorage.clear()
+
+
 
 // let myLeads = ["www.helloworld.com", "www.examplelead.com", "www.notyourbro.com"]
 let myLeads = []
