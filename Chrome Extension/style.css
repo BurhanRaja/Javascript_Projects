@@ -1,10 +1,13 @@
-body{
+/* Body */
+body {
     margin: 0px;
     padding: 10px;
     font-family: 'Arial';
     min-width: 400px;
 }
 
+
+/* Input */
 #input-el {
     width: 100%;
     background-color: #e9faff;
@@ -14,7 +17,9 @@ body{
 }
 
 
-button {
+
+/* Buttons */
+#save-btn {
     background-color: #5f9341;
     border: none;
     border-radius: 2px;
@@ -23,11 +28,29 @@ button {
     font-weight: 600;
     margin-top: 5px;
 }
-button:hover {
+
+#save-btn:hover {
     background-color: #6ba549;
     cursor: pointer;
 }
 
+#delete-btn {
+    background-color: white;
+    border: 1px solid #eaeaea;
+    padding: 10px 20px;
+    color: #5f9341;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+#delete-btn:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+/* Display List */
 .list-container ul {
     padding: 0;
     margin-top: 20px;
@@ -41,5 +64,3 @@ button:hover {
 .list-container li a {
     color: #6ba549;
 }
-
-
