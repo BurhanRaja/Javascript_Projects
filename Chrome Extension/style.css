@@ -34,6 +34,21 @@ body {
     cursor: pointer;
 }
 
+#tab-btn {
+    background-color: #5f9341;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+#tab-btn:hover {
+    background-color: #6ba549;
+    cursor: pointer;
+}
+
 #delete-btn {
     background-color: white;
     border: 1px solid #eaeaea;
