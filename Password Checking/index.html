@@ -15,9 +15,9 @@
         </div>
 
         <div class="input-password">
-            <input id="password" type="password" placeholder="Type Password..">
-            <button class="password-hide-btn"><box-icon color='grey' name='hide'></box-icon></button>
-            <button class="password-show-btn"><box-icon color='grey' name='show'></box-icon></button>
+            <input onkeyup="trigger()" id="password" type="password" placeholder="Type Password.." maxlength="25">
+            <button onclick="hidePassword()" class="password-hide-btn"><box-icon color='grey' name='hide'></box-icon></button>
+            <button onclick="showPassword()" class="password-show-btn"><box-icon color='grey' name='show'></box-icon></button>
         </div>
 
         <div class="indication">
@@ -27,11 +27,9 @@
         </div>
 
         <div class="indication-text">
-            <span>Password is too Weak</span>
+            <span class="indicationText"></span>
         </div>
     </div>
-
-    <button class="input-text" id="text" onclick="getText()"></button>
 </body>
 <script src="app.js"></script>
 </html>

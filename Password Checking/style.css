@@ -44,15 +44,14 @@ html, body {
 
 .password-show-btn, .password-hide-btn {
     background: transparent;
+    padding: 2px 5px;
     border: none;
     cursor: pointer;
     font-size: 20px;
     color: rgb(158, 158, 158);
     position: absolute;
-    right: 25%;
-    top: 15%;
-}
-.password-hide-btn {
+    right: 24%;
+    top: 6%;
     display: none;
 }
 
@@ -60,7 +59,7 @@ html, body {
     margin: 12px 5px 5px 5px;
 }
 .indication {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     width: 52%;
