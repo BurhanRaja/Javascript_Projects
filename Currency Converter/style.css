@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(89, 8, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+/* Title */
+.container-title {
+    margin: 10px 10px 20px 10px;
+}
+h2 {
+    text-align: center;
+}
+
+/* Amount */
+.amount-input {
+    margin-bottom: 20px;
+}
+.amount-input p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+.amount-input input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 5px;
+}
+.amount-input input:focus {
+    outline: none;
+}
+
+/* From To */
+.converter-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.converter-arrows{
+    margin: 32px 40px 1px 40px;
+    font-size: 20px;
+}
+.selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 5px;
+    background-color: white;
+    padding: 8px 4px;
+}
+.selector img{
+    /* height: 10px; */
+    width: 40px;
+    margin: 0 5px;
+}
+select {
+    border: none;
+    padding: 5px 5px;
+}
+select:focus {
+    outline: none;
+}
+.to p, .from p {
+    margin: 5px 0;
+}
+
+.display-currency-container {
+    text-align: center;
+}
+
+.exchange-rate-btn-container {
+    text-align: center;
+}
+.exchange-rate-btn {
+    padding: 10px 20px;
+    background-color: rgb(10, 108, 255);
+    color: white;
+    border: none;
+    margin: 20px 0 10px 0;
+    border-radius: 5px;
+    width: 100%;
+}
+.exchange-rate-btn:hover {
+    cursor: pointer;
+    background-color: rgb(0, 93, 231);
+}
