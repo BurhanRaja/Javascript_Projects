@@ -32,6 +32,7 @@ html, body{
     font-weight: 800;
     color: transparent;
     background: linear-gradient(135deg, #FEED07 5%, #FE6A50 7%, #ED00AA 15%, #2FE3FE 50%, #8900FF 100%);
+    background-clip: border-box;
     -webkit-background-clip: text;
     background-size: 350%;
 }
