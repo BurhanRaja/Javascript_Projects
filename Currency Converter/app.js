@@ -1,6 +1,15 @@
 const dropList = document.querySelectorAll(".selector select")
-const imageFlag = document.querySelectorAll(".selector img")
+const imageFlag = document.querySelector(".selector img")
 
+const displayAmount = document.querySelector('.display-converter b')
+
+const amountInp = document.querySelector('.amount-input input')
+const exchangeBtn = document.querySelector('.exchange-rate-btn-container button')
+
+const fromCurrency = document.querySelector('.from select')
+const toCurrency = document.querySelector('.to select')
+
+// Displaying Country Codes as options
 for (let i = 0; i < dropList.length; i++) {
     for (currency_code in country_list) {
         let selected;
@@ -15,7 +24,19 @@ for (let i = 0; i < dropList.length; i++) {
     }
 }
 
-const fetchExchangeRates = async (base, convertedTo, amount) => {
+
+// Get Exchange Rates
+exchangeBtn.addEventListener("click", async (e) => {
+    e.preventDefault()
+    const base = fromCurrency.value
+    const convertedTo = toCurrency.value
+    const amount = amountInp.value
+    getExchangeRates(base, convertedTo, amount)
+})
+
+
+// Currency Conversion
+const getExchangeRates = async (base, convertedTo, amount) => {
     let myHeaders = new Headers();
     myHeaders.append("apikey", secret.API_KEY);
     
@@ -25,22 +46,25 @@ const fetchExchangeRates = async (base, convertedTo, amount) => {
         headers: myHeaders
     };
     
-    await fetch(`https://api.apilayer.com/exchangerates_data/convert?to=${convertedTo}&from=${base}&amount=${amount}`, requestOptions)
-        .then(response => response.text())
-        .then(result => console.log(result))
+    const response = await fetch(`https://api.apilayer.com/exchangerates_data/convert?to=${convertedTo}&from=${base}&amount=${amount}`, requestOptions)
         .catch(error => console.log('error', error));
+    
+    let result = await response.json()
+    
+    
 }
 
-const fetchFlags = (base, convertedTo) => {
-    imageFlag[0].alt = base
-    imageFlag[1].alt = convertedTo
-
-    base = base.slice(0, 2)
-    convertedTo = convertedTo.slice(0, 2)
-
-    base = base.toLowerCase()
-    convertedTo = convertedTo.toLowerCase()
-
-    imageFlag[0].src = `https://countryflagsapi.com/png/${base}`
-    imageFlag[1].src = `https://countryflagsapi.com/png/${convertedTo}`
+// Flags 
+const fetchFlag = (element) => {
+    imageFlag.alt = element
+    element = element.slice(0, 2)
+    element = element.toLowerCase()
+    imageFlag.src = `https://countryflagsapi.com/png/${element}`
 }
+
+// async function update() {
+//     const he = await fetchExchangeRates("USD", "INR", 1)
+//     console.log(he)
+// }
+
+// update()
