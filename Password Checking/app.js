@@ -24,7 +24,7 @@ function trigger() {
 
         // As the Password Getting Stronger
         // Weak
-        if (regExWeak.exec(input.value) || regExStrong.exec(input.value) || regExMedium.exec(input.value)) {
+        if (regExWeak.exec(input.value) || regExStrong.exec(input.value) || regExMedium.exec(input.value) && input.value.length > 8) {
             weak.style.backgroundColor = "red"
             indicationText.innerText = "Password is too Weak"
         }
@@ -33,7 +33,7 @@ function trigger() {
         }
 
         // Medium
-        if ((regExMedium.exec(input.value) && regExWeak.exec(input.value)) || (regExMedium.exec(input.value) && regExStrong.exec(input.value)) || (regExWeak.exec(input.value) && regExStrong.exec(input.value))) {
+        if ((regExMedium.exec(input.value) && regExWeak.exec(input.value)) || (regExMedium.exec(input.value) && regExStrong.exec(input.value)) || (regExWeak.exec(input.value) && regExStrong.exec(input.value)) && input.value.length > 10) {
             medium.style.backgroundColor = "rgb(255, 166, 0)"
             indicationText.innerText = "Password is Medium"
         }
@@ -41,8 +41,8 @@ function trigger() {
             medium.style.backgroundColor = "lightgrey"
         }
 
-        // Stong
-        if (regExStrong.exec(input.value) && regExMedium.exec(input.value) && regExWeak.exec(input.value)) {
+        // Strong
+        if (regExStrong.exec(input.value) && regExMedium.exec(input.value) && regExWeak.exec(input.value) && input.value.length > 12) {
             strong.style.backgroundColor = "rgb(39, 233, 0)"
             indicationText.innerText = "Password is Strong"
         }
