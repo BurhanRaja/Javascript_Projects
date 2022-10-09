@@ -8,7 +8,7 @@
 
 html, body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(89, 8, 240);
+    background-color: rgb(76, 0, 218);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,6 +58,7 @@ h2 {
 .converter-arrows{
     margin: 32px 40px 1px 40px;
     font-size: 20px;
+    cursor: pointer;
 }
 .selector {
     display: flex;
