@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(90, 97, 164);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+h2 {
+    color: darkslategrey;
+}
+
+img {
+    padding: 50px;
+    background-color: rgb(201, 201, 201);
+    height: 50vh;
+    width: 35vw;
+    border-radius: 8px;
+}
+.all-filter-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+.filters-container {
+    width: 23vw;
+    padding: 15px;
+    border: 1px solid darkgray;
+    margin-right: 2rem;
+}
+h3 {
+    margin: 10px;
+}
+.brightness-saturation {
+    text-align: center;
+}
+.inversion-grayscale {
+    text-align: center;
+}
+.brightness-saturation button{ 
+    padding: 15px;
+    margin: 4px 2px;
+    width: 8rem;
+    font-size: 14px;
+}
+.inversion-grayscale button{
+    padding: 15px;
+    margin: 4px 2px;
+    width: 8rem;
+    font-size: 14px;
+}
+
+.progress-container {
+    margin: 15px 10px;
+}
+.progress-container input {
+    width: 100%;
+}
+.progress-text {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.image-container{
+    
+}
