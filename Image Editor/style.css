@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(90, 97, 164);
+    background-color: rgb(194, 230, 255);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -17,67 +17,157 @@ body {
 }
 
 .container {
-    background-color: whitesmoke;
+    background-color: white;
     padding: 20px;
 }
 
 h2 {
     color: darkslategrey;
+    padding: 5px 20px;
 }
 
+/* All Image */
 img {
     padding: 50px;
     background-color: rgb(201, 201, 201);
-    height: 50vh;
+    height: 52vh;
     width: 35vw;
-    border-radius: 8px;
+    border-radius: 4px;
 }
+
 .all-filter-container {
     padding: 20px;
     display: flex;
     justify-content: center;
-
 }
+
+/* Filter Container */
 .filters-container {
     width: 23vw;
     padding: 15px;
     border: 1px solid darkgray;
     margin-right: 2rem;
 }
+
 h3 {
     margin: 10px;
 }
-.brightness-saturation {
-    text-align: center;
-}
-.inversion-grayscale {
-    text-align: center;
-}
-.brightness-saturation button{ 
-    padding: 15px;
-    margin: 4px 2px;
-    width: 8rem;
-    font-size: 14px;
-}
-.inversion-grayscale button{
-    padding: 15px;
-    margin: 4px 2px;
-    width: 8rem;
-    font-size: 14px;
+
+/* All Buttons */
+button {
+    padding: 13px 15px;
+    background-color: white;
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 3px;
+    font-size: 15px;
 }
 
+/* Filter Buttons */
+.filter-btn {
+    text-align: center;
+}
+
+.filter-btn button {
+    margin: 4px 2px;
+    width: 8rem;
+}
+
+.filter-btn button:hover{
+    border: 1px solid #5372F0;
+    background-color: #5372F0;
+    cursor: pointer;
+    color: white;
+}
+
+.filter-btn button.active {
+    border: 1px solid #5372F0;
+    background-color: #5372F0;
+    cursor: pointer;
+    color: white;
+}
+
+/* Range Slider */
 .progress-container {
     margin: 15px 10px;
 }
+
 .progress-container input {
     width: 100%;
+    height: 5px;
+    color: #5372F0;
 }
+
+.progress-container input:hover {
+    cursor: pointer;
+    color: #5372F0;
+}
+
 .progress-text {
     display: flex;
     justify-content: space-between;
     margin: 5px 0;
 }
 
-.image-container{
+/* Rotate Buttons */
+.rotate-container {
+    padding: 10px;
+    text-align: center;
+}
+
+.rotate-btns button {
+    margin: 0 6px;
+}
+
+.rotate-btns button:hover {
+    border: 1px solid #5372F0;
+    background-color: #5372F0;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Bottom Buttons */
+.btns-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
     
+}
+.reset-btn button {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.reset-btn button:hover {
+    background-color: #5372F0;
+    color: white;
+    border: 1px solid #5372F0;
+    cursor: pointer;
+}
+
+.choose-save button:first-of-type{
+    margin: 0 4px; 
+    background-color: grey;
+    color: white;
+    border: 1px solid grey;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.choose-save button:first-of-type:hover {
+    background-color: rgb(112, 112, 112);
+    cursor: pointer;
+    border: 1px solid rgb(112, 112, 112);
+}
+
+.choose-save button:last-of-type{
+    margin: 0 0 0 4px; 
+    background-color: #5372F0;
+    color: white;
+    border: 1px solid #5372F0;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.choose-save button:last-of-type:hover {
+    background-color: #3158f5;
+    border: 1px solid #3158f5;
+    cursor: pointer;
 }

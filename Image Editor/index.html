@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Image Editor</title>
 </head>
+
 <body>
-    
+
     <div class="container">
         <h2>Easy to use Image Editor</h2>
         <div class="all-filter-container">
             <div class="filters-container">
                 <h3>Filters</h3>
-                <div class="brightness-saturation">
-                    <button>Brightness</button>
-                    <button>Saturation</button>
+                <div class="filter-btn">
+                    <button id="brigthness" class="active">Brightness</button>
+                    <button id="saturation">Saturation</button>
                 </div>
-                <div class="inversion-grayscale">
-                    <button>Inversion</button>
-                    <button>Grayscale</button>
-                </div>
-                <div class="progress-container">
-                    <div class="progress-text">
-                        <p>Brightness</p>
-                        <p>100%</p>
-                    </div>
-                    <input type="range" name="range" value="30">
+                <div class="filter-btn">
+                    <button id="inversion">Inversion</button>
+                    <button id="grayscale">Grayscale</button>
                 </div>
                 <div class="progress-container">
                     <div class="progress-text">
-                        <p>Brightness</p>
-                        <p>100%</p>
+                        <p class="filter-name">Brightness</p>
+                        <p class="filter-percentage">100%</p>
                     </div>
-                    <input type="range" name="range" value="30">
+                    <input type="range" name="range" value="30" id="range-slider">
+                </div>
+                <div class="rotate-container">
+                    <div class="rotate-btns">
+                        <button id="rotate-left"><i class="fa-solid fa-rotate-left"></i></button>
+                        <button id="rotate-right"><i class="fa-solid fa-rotate-right"></i></button>
+                        <button id="rotate-vertical"><i class="bx bx-reflect-vertical"></i></button>
+                        <button id="rotate-horizontal"><i class="bx bx-reflect-horizontal"></i></button>
+                    </div>
                 </div>
             </div>
             <div class="image-container">
@@ -43,11 +48,18 @@
         </div>
 
         <div class="btns-container">
-            
+            <div class="reset-btn">
+                <button class="reset-filter">Reset Filters</button>
+            </div>
+            <div class="choose-save">
+                <input type="file" class="file-input" accept="image/*">
+                <button class="choose-img">Choose Image</button>
+                <button class="save-img">Save Image</button>
+            </div>
         </div>
-
     </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>
