@@ -31,7 +31,8 @@ img {
     padding: 50px;
     background-color: rgb(201, 201, 201);
     height: 52vh;
-    width: 35vw;
+    max-width: 65vw;
+    width: auto;
     border-radius: 4px;
 }
 
@@ -47,6 +48,10 @@ img {
     padding: 15px;
     border: 1px solid darkgray;
     margin-right: 2rem;
+}
+.disable {
+    pointer-events: none;
+    opacity: 0.3;
 }
 
 h3 {
@@ -170,4 +175,8 @@ button {
     background-color: #3158f5;
     border: 1px solid #3158f5;
     cursor: pointer;
+}
+
+.file-input {
+    visibility: hidden;
 }
