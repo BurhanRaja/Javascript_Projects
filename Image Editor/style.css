@@ -27,6 +27,10 @@ h2 {
 }
 
 /* All Image */
+.image-container {
+    width: auto;
+    height: auto;
+}
 img {
     padding: 50px;
     background-color: rgb(201, 201, 201);
@@ -34,12 +38,16 @@ img {
     max-width: 65vw;
     width: auto;
     border-radius: 4px;
+    /* filter: ; */
 }
 
 .all-filter-container {
     padding: 20px;
     display: flex;
     justify-content: center;
+    height: auto;
+    width: auto;
+    overflow:auto;
 }
 
 /* Filter Container */
@@ -84,7 +92,7 @@ button {
     color: white;
 }
 
-.filter-btn button.active {
+.active {
     border: 1px solid #5372F0;
     background-color: #5372F0;
     cursor: pointer;
