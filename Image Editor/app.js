@@ -44,7 +44,7 @@ filterBtns.forEach(option => {
             filterSlider.max = 100
             filterSliderValue.innerText = `${inversion}%`
         }
-        else if(option.innerText === 'Grayscale') {
+        else if (option.innerText === 'Grayscale') {
             filterSlider.value = grayscale
             filterSlider.max = 100
             filterSliderValue.innerText = `${grayscale}%`
@@ -52,7 +52,7 @@ filterBtns.forEach(option => {
     })
 });
 
-// TODO: Filter Slider Input add to the filterSliderValue 
+
 filterSlider.addEventListener('input', () => {
     filterSliderValue.innerText = `${filterSlider.value}%`
     let selectedFilter = document.querySelector('.filter-btn .active');
@@ -89,33 +89,33 @@ fileInput.addEventListener("change", () => {
 
 // Rotate Image
 rotateBtns.forEach(btn => {
-btn.addEventListener("click", () => {
+    btn.addEventListener("click", () => {
 
         if (btn.id === 'rotate-left') {
             rotate += 90
-            imageRotate.style.transform = `rotate(${rotate}deg)`
+            image.style.transform = `rotate(${rotate}deg)`
         }
         else if (btn.id === 'rotate-right') {
             rotate -= 90
-            imageRotate.style.transform = `rotate(${rotate}deg)`
+            image.style.transform = `rotate(${rotate}deg)`
         }
         else if (btn.id === 'rotate-vertical') {
             if (veritcalRotate == -1) {
-                imageRotate.style.transform = `scaleX(-1)`
+                image.style.transform = `scaleX(-1)`
                 veritcalRotate = 1
             }
             else {
-                imageRotate.style.transform = `scaleX(1)`
+                image.style.transform = `scaleX(1)`
                 veritcalRotate = -1
             }
         }
         else if (btn.id === 'rotate-horizontal') {
             if (horizontalRotate == -1) {
-                imageRotate.style.transform = `scaleY(-1)`
+                image.style.transform = `scaleY(-1)`
                 horizontalRotate = 1
             }
             else {
-                imageRotate.style.transform = `scaleY(1)`
+                image.style.transform = `scaleY(1)`
                 horizontalRotate = -1
             }
         }
