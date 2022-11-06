@@ -5,7 +5,9 @@ const exchangeRateBtn = document.querySelector('.exchange-rate-btn-container but
 const fromCurrency = document.querySelector('.from select')
 const toCurrency = document.querySelector('.to select')
 const exchangeCurrBtn = document.querySelector('.converter-arrows i')
-
+let isAdmin = 10.0
+let num = '18.0'
+console.log(isAdmin + num)
 // Displaying Country Codes as options
 for (let i = 0; i < dropList.length; i++) {
     for (let currency_code in country_list) {
