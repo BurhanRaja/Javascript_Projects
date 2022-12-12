@@ -1,177 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .heading {
-    background-color: #28b9b5;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    color: white;
+  background-color: #28b9b5;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: white;
 }
 .headText {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .alert {
-    position: fixed;
-    padding: 10px;
-    top: 0;
-    left: 25%;
-    width: 50%;
-    text-align: center;
-    border-radius: 5px;
-    margin-top: 10px;
+  position: fixed;
+  padding: 10px;
+  top: 0;
+  left: 25%;
+  width: 50%;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 .alert p {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
 }
 
 .formBody {
-    padding: 5rem 0;
-    background-color: #e7e7e7;
+  padding: 5rem 0;
+  background-color: #e7e7e7;
 }
 
 form {
-    width: 50%;
-    margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .flexInputs {
-    display: flex;
-    width: 82%;
-    margin: 0 auto 2rem auto;
+  display: flex;
+  width: 82%;
+  margin: 0 auto 2rem auto;
 }
 .flexInputs div {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 .flexInputs div label {
-    margin: 5px 0;
+  margin: 5px 0;
 }
-select, input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 1px solid #28b9b5;
-    font-size: 1rem;
+select,
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #28b9b5;
+  font-size: 1rem;
 }
 
-select:focus, input:focus {
-    outline: none;
-    border: 1px solid blue;
+select:focus,
+input:focus {
+  outline: none;
+  border: 1px solid blue;
 }
 
 .inputGroup {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .card {
-    margin: 1.5rem;
-    width: 20%;
-    height: 40vh;
-    border: 1px solid lightgray;
-    border-radius: 5px;
+  margin: 1.5rem;
+  width: 20%;
+  height: 40vh;
+  border: 1px solid lightgray;
+  border-radius: 5px;
 }
 .cardTitle {
-    padding: 5px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    color: white;
+  padding: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: white;
 }
 .displayItems {
-    padding: 5px;
-    margin: 10px 0;
+  padding: 5px;
+  margin: 10px 0;
 }
 .displayItems p {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
 }
 
 .rvmBtn {
-    border-radius: 50%;
-    padding: 2px 4px;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
+  border-radius: 50%;
+  padding: 2px 5px;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+.item {
+  margin: 2px 0;
 }
 
 .displayCardList {
-    margin-top: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .submitBtnCont {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .submitBtn {
-    padding: 12px;
-    width: 30%;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: #28b9b5;
-    color: white;
-    cursor: pointer;
+  padding: 12px;
+  width: 30%;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #28b9b5;
+  color: white;
+  cursor: pointer;
 }
 
 .bg-1 {
-    background-color: #8fe302;
+  background-color: #8fe302;
 }
 .bg-2 {
-    background-color: #f24844;
+  background-color: #f24844;
 }
 .bg-3 {
-    background-color: #017a5a;
+  background-color: #017a5a;
 }
 .bg-4 {
-    background-color: #fa980f;
+  background-color: #fa980f;
 }
 .bg-5 {
-    background-color: #7479f2;
+  background-color: #7479f2;
 }
 .bg-6 {
-    background-color: #f2d250;
+  background-color: #f2d250;
 }
 .bg-7 {
-    background-color: #e3028a;
+  background-color: #e3028a;
 }
 .bg-8 {
-    background-color: #0334fd;
+  background-color: #0334fd;
 }
 .bg-9 {
-    background-color: #cacaca;
+  background-color: #cacaca;
 }
-
 
 .hide {
-    display: none;
+  display: none;
 }
 .warning {
-    background-color: #f2d250;
+  background-color: #f2d250;
 }
 .error {
-    background-color: #f24844;;
+  background-color: #f24844;
 }
 .success {
-    background-color: #017a5a;
+  background-color: #017a5a;
 }
