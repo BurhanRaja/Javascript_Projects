@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Shopping List</title>
 </head>
+
 <body>
 
-    <h2>Hello World!</h2>
-    
+    <h2 class="heading"><i class="fa-solid fa-bag-shopping"></i> <span class="headText">Shopping List</span></h2>
+
+        <div class="alert hide">
+            <p></p>
+        </div>
+
+    <div class="formBody">
+        <form action="">
+            <div class="flexInputs">
+                <div>
+                    <label for="catItem">Select Category</label>
+                    <select name="catItem" id="catItem">
+                        <option selected value="0">Select Here</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="quantity">Quantity</label>
+                    <input type="number" name="quantity" id="quantity" min="1" max="100">
+                </div>
+            </div>
+            <div class="inputGroup">
+                <label for="itemName">Name of Item</label>
+                <input type="text" name="itemName" id="itemName">
+            </div>
+            <div class="submitBtnCont">
+                <button class="submitBtn">Add</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="displayCardList">
+    </div>
+
 </body>
+
 </html>

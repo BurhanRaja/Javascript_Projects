@@ -1,4 +1,6 @@
 {
-    "presets": ["@bable/presets-env"],
+    "presets": [["@babel/preset-env", {
+        "modules": false 
+    }]],
     "plugins": ["@babel/plugin-transform-runtime"]
 }
