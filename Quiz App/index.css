@@ -15,8 +15,13 @@
 
 .quiz-container {
     padding: 15px;
-    width: 35%;
+    width: 40%;
     position: relative;
+    text-align: center;
+}
+
+.corectAns {
+    text-align: center;
 }
 
 .qa {
